@@ -1327,6 +1327,12 @@
 
 
     <script>
+        $(function() {
+  $('#menu').metisMenu({
+    toggle: false // disable the auto collapse. Default: true.
+  });
+});
+
         $(document).ready(function() {
             setTimeout(function() {
                 toastr.options = {

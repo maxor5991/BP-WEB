@@ -29,7 +29,7 @@ if ( isset( $_SESSION[ "username" ] ) ) {
 
 </head>
 
-<body class="skin-1">
+<body class="skin-2">
 
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div>
