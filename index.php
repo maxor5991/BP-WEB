@@ -33,11 +33,14 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
         <div class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu" >
                 <li class="nav-header">
-                    <div class="dropdown profile-element"> <span>
+                    <div class="dropdown profile-element">
+                        <span>
                             <img alt="image" class="img-circle" src="img/user.png"/>
-                             </span>
+                        </span>  
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Jose Guanilo Barragan</strong>
+                            <span class="clear">
+                                <span class="block m-t-xs"> 
+                                    <strong class="font-bold">Jose Guanilo Barragan</strong>
                              </span> <span class="text-muted text-xs block">Developer<b class="caret"></b></span> </span> </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a href="profile.html">Profile</a></li>
@@ -86,60 +89,44 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
                            
                         </div>
                         
-                         <div class="ibox-content">
-                            <h3>
-                                Data picker
-                            </h3>
-                            <p>
-                                Simple and easy select a time for a text input using your mouse.
-                            </p>
-
-                            <div id="datetimepicker1" class="input-append date">
-      <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input>
-      <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
-    </div>
+                         <div class="ibox-content" method="POST" action="">
+                            
                             <div class="form-group" id="data_2">
-                                <label class="font-noraml">One Year view</label>
+                                <label class="font-noraml">Tiempo</label>
                                 <div class="input-group date">
                                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="08/09/2014">
+
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                            <label class="font-noraml">Ultima ubicación</label>
+                                    <input type="text" class="form-control"> 
+                                    <div class="hr-line-dashed"></div>
+                            <label class="font-noraml">Razón</label>
+                                    <input type="text" class="form-control"> 
+                                    <div class="hr-line-dashed"></div>
+                            <label class="font-noraml">Velocidad (Kph)</label>
+                                    <input type="text" class="form-control"> 
+                                    <div class="hr-line-dashed"></div>
+                            <label class="font-noraml">Kilometraje (Km.)</label>
+                                    <input type="text" class="form-control"> 
+                                    <div class="hr-line-dashed"></div>
+                            <label class="font-noraml">One Year view</label>
+                                    <input type="text" class="form-control"> 
+                                    <div class="hr-line-dashed"></div>
+                            <label class="font-noraml">One Year view</label>
+                                    <input type="text" class="form-control"> 
+                                              <div class="hr-line-dashed"></div>
+                            <label class="font-noraml">One Year view</label>
+                                    <input type="text" class="form-control"> 
+
+                                    
                                 </div>
                             </div>
 
-                            <div class="form-group" id="data_3">
-                                <label class="font-noraml">Decade view</label>
-                                <div class="input-group date">
-                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="10/11/2013">
-                                </div>
-                            </div>
-
-                            <div class="form-group" id="data_4">
-                                <label class="font-noraml">Month select</label>
-                                <div class="input-group date">
-                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                </div>
-                            </div>
-
-                            <div class="form-group" id="data_5">
-                                <label class="font-noraml">Range select</label>
-                                <div class="input-daterange input-group" id="datepicker">
-                                    <input type="text" class="input-sm form-control" name="start" value="05/14/2014"/>
-                                    <span class="input-group-addon">to</span>
-                                    <input type="text" class="input-sm form-control" name="end" value="05/22/2014" />
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <div class="pull-right">
-                    10GB of <strong>250GB</strong> Free.
-                </div>
-                <div>
-                    <strong>Copyright</strong> Example Company &copy; 2014-2017
-                </div>
-            </div>
+            
 
         </div>
         </div>
@@ -149,59 +136,16 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- Custom and plugin javascript -->
-    <script src="js/plugins/chosen/chosen.jquery.js"></script>
-
-   <!-- JSKnob -->
-   <script src="js/plugins/jsKnob/jquery.knob.js"></script>
-
-   <!-- Input Mask-->
-    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
 
    <!-- Data picker -->
    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
-
-   <!-- NouSlider -->
-   <script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
-
-   <!-- Switchery -->
-   <script src="js/plugins/switchery/switchery.js"></script>
-
-    <!-- IonRangeSlider -->
-    <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
-
-    <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script>
-
-    <!-- MENU -->
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-
-    <!-- Color picker -->
-    <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
-
-    <!-- Clock picker -->
-    <script src="js/plugins/clockpicker/clockpicker.js"></script>
-
     <!-- Image cropper -->
     <script src="js/plugins/cropper/cropper.min.js"></script>
-
-    <!-- Date range use moment.js same as full calendar plugin -->
-    <script src="js/plugins/fullcalendar/moment.min.js"></script>
-
-    <!-- Date range picker -->
-    <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
-
-    <!-- Select2 -->
-    <script src="js/plugins/select2/select2.full.min.js"></script>
-
-    <!-- TouchSpin -->
-    <script src="js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
-
     <!-- Tags Input -->
     <script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
 
     <!-- Dual Listbox -->
-    <script src="js/plugins/dualListbox/jquery.bootstrap-duallistbox.js"></script>
+
      <script>
         $(document).ready(function(){
 
