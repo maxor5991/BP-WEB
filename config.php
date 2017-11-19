@@ -1,8 +1,8 @@
-<?php
-$currency = 'S/';
-$db_username = 'root';
-$db_password = 'root';
-$db_name = 'bp_pruebas';
-$db_host = 'localhost';
-$mysqli = new mysqli($db_host, $db_username, $db_password,$db_name);
-?>
+<?php 
+function getConnexion()
+{
+  $mysqli = new Mysqli('localhost', 'root', '', 'bp_pruebas');
+  if($mysqli->connect_errno) exit('Error en la conexión: ' . $mysqli->connect_errno);
+  $mysqli->set_charset('utf8');
+  return $mysqli;
+}
