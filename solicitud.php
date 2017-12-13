@@ -32,7 +32,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM solicitud ORDER BY IdSolicitud DE
 
 </head>
 
-<body class="skin-2">
+<body class="skin-2" style="overflow: hidden;">
 
 
     <div id="wrapper">
@@ -86,9 +86,18 @@ $result = mysqli_query($mysqli, "SELECT * FROM solicitud ORDER BY IdSolicitud DE
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Custom responsive table </h5>
+                    <h5>Listado de Solicitudes</h5>
                 </div>
                 <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Agregar</button>
+                            <?php
+                            include("modales/agregarchofer.php");
+                            ?>
+                        <!--<button type="button" class="btn btn-sm btn-primary">Agregar</button>-->
+                        </div>
+                    </div>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>

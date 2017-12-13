@@ -86,7 +86,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM chofer ORDER BY IdChofer DESC");
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Custom responsive table </h5>
+                    <h5>Listadi de Choferes</h5>
                 </div>
                 <div class="ibox-content">
                     <div class="row">

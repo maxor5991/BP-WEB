@@ -6,27 +6,38 @@
                                             <i class="fa fa-user modal-icon"></i>
                                             <h4 class="modal-title">Agregar Chofer</h4>
                                         </div>
-                                        <form action="add.php" method="post" name="form1">
-                                        <div class="modal-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped">
-                                                    <tr><td><input type="text" name="DNI"></td></tr>
-                                                    <tr><td><input type="text" name="Nombre"></td></tr>
-                                                    <tr><td><input type="text" name="Apellido"></td></tr>
-                                                    <tr><td><input type="text" name="Direccion"></td></tr>
-                                                    <tr><td><input type="text" name="Celular"></td></tr>
-                                                    <tr><td><input type="text" name="Correo"></td></tr>
-                                                    <tr><td><input type="text" name="Contrasena"></td></tr>
-                                                    <tr><td><input type="text" name="Estado"></td></tr>
-                                                    <tr><td><input type="text" name="IdDistrito"></td></tr>   
-                                                </table>
+                                        <form action="modales\add.php" method="post" name="form1">
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="usr">DNI:</label>
+                                                    <input type="text" class="form-control" id="DNI">
+                                                    <label for="usr">Nombres:</label>
+                                                    <input type="text" class="form-control" id="Nombre">
+                                                    <label for="usr">Apellidos:</label>
+                                                    <input type="text" class="form-control" id="Apellido">
+                                                    <label for="usr">Imagen:</label>
+                                                    <input type="text" class="form-control" id="Imagen">
+
+                                                </div>
+                                                    
+                                                <div class="col-sm-6">
+                                                    <label for="usr">Direccion:</label>
+                                                    <input type="text" class="form-control" id="Direccion">
+                                                    <label for="usr">Celular:</label>
+                                                    <input type="text" class="form-control" id="Celular">
+                                                    <label for="usr">Correo:</label>
+                                                    <input type="text" class="form-control" id="Correo">
+                                                    <label for="usr">Contraseña:</label>
+                                                    <input type="text" class="form-control" id="Contrasena">
+                                                </div>
+                                                    
                                                 </div>
                                             </div>
-                                        </form>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                            <input type="submit" name="Submit" value="Add" class="btn btn-primary">Save changes</input>
+                                            <div class="modal-footer">
+                                            <input type="submit" name="insert" id="insert" value="Insert" class="btn btn-success" />
                                         </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
