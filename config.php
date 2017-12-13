@@ -1,6 +1,6 @@
 <?php
 $databaseHost = 'localhost';
-$databaseName = 'taxi';
+$databaseName = 'bp_pruebas';
 $databaseUsername = 'root';
 $databasePassword = '';
 

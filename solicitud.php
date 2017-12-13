@@ -80,7 +80,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM solicitud ORDER BY IdSolicitud DE
         </nav>
         </div>
         <br>
-        <div class="container">
   <div class="page-header text-left">
     <h1>Buscador</h1>
     <div class="row">
@@ -106,8 +105,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM solicitud ORDER BY IdSolicitud DE
                                     echo "<tr>";
                                     echo "<td>".$res['IdSolicitud']."</td>";
                                     echo "<td>".$res['IdPedido']."</td>";
-                                    echo "<td>".$res['IdChofer']."</td>";
-                                    echo "<td>".$res['Estado']."</td>";
+                                    echo "<td>".$res['DniChofer']."</td>";
+                                    echo "<td>".$res['EstadoPedido']."</td>";
                                 }
                                 ?>
                              </tbody>

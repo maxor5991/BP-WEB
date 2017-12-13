@@ -32,7 +32,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM chofer ORDER BY IdChofer DESC");
 
 </head>
 
-<body class="skin-2">
+<body class="skin-2" style="overflow: hidden;">
 
 
     <div id="wrapper">
@@ -71,7 +71,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM chofer ORDER BY IdChofer DESC");
         </div>
     </nav>
 
-        <div id="page-wrapper" class="gray-bg">
+    <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
        
@@ -80,7 +80,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM chofer ORDER BY IdChofer DESC");
         </nav>
         </div>
         <br>
-        <div class="container">
   <div class="page-header text-left">
     <h1>Buscador</h1>
     <div class="row">
